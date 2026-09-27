@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー | 私の筋トレ記録</title>
+<meta name="description" content="iPhoneアプリ「私の筋トレ記録」のプライバシーポリシーです。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F3F5F2;
+    --sheet: #FFFFFF;
+    --ink: #1F2A24;
+    --muted: #5E6B63;
+    --rule: #D6E0D9;
+    --accent: #4F6E5A;
+    --sage: #7C9C89;
+    --icon-paper: #EEF3F0;
+    --icon-ink: #2F4A3B;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #15171A;
+      --sheet: #1F2226;
+      --ink: #ECEAE6;
+      --muted: #A3A9A5;
+      --rule: #30363A;
+      --accent: #A7C4B1;
+      --sage: #7C9C89;
+      --icon-paper: #25302A;
+      --icon-ink: #A3C4AE;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Zen Kaku Gothic New", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+    font-size: 16px;
+    line-height: 1.85;
+  }
+  .wrap { max-width: 42rem; margin: 0 auto; padding: 0 1.25rem; }
+
+  header.site { border-bottom: 1px solid var(--rule); }
+  .brand { display: flex; align-items: center; gap: 1rem; padding: 2.25rem 0 1.25rem; }
+  .brand svg { width: 64px; height: 64px; flex: none; border-radius: 15px; }
+  .brand h1 { margin: 0; font-size: 1.6rem; line-height: 1.3; letter-spacing: 0.02em; }
+  .brand p { margin: 0.15rem 0 0; color: var(--muted); font-size: 0.95rem; }
+  nav.tabs { display: flex; gap: 1.5rem; }
+  nav.tabs a {
+    display: inline-block; padding: 0.6rem 0 0.7rem; color: var(--muted);
+    text-decoration: none; border-bottom: 2px solid transparent; font-weight: 700; font-size: 0.95rem;
+  }
+  nav.tabs a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--sage); }
+  nav.tabs a:hover { color: var(--ink); }
+
+  main { padding: 2rem 0 3rem; }
+  h2 { font-size: 1.2rem; margin: 2.5rem 0 0.75rem; line-height: 1.5; }
+  main > .wrap > h2:first-child { margin-top: 0; }
+  p { margin: 0 0 1rem; }
+  a { color: var(--accent); text-underline-offset: 0.2em; }
+  a:focus-visible, summary:focus-visible { outline: 2px solid var(--sage); outline-offset: 3px; border-radius: 4px; }
+
+  .spec { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--rule); }
+  .spec li { display: flex; gap: 1rem; padding: 0.65rem 0; border-bottom: 1px solid var(--rule); }
+  .spec span:first-child { width: 7.5rem; flex: none; color: var(--muted); }
+
+  .faq { border-top: 1px solid var(--rule); }
+  .faq details { border-bottom: 1px solid var(--rule); }
+  .faq summary {
+    cursor: pointer; list-style: none; padding: 0.9rem 2rem 0.9rem 0; position: relative; font-weight: 700;
+  }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after {
+    content: ""; position: absolute; right: 0.35rem; top: 1.35rem; width: 0.55rem; height: 0.55rem;
+    border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: rotate(45deg);
+  }
+  .faq details[open] summary::after { transform: rotate(-135deg); top: 1.6rem; }
+  .faq .answer { padding: 0 0 1rem; color: var(--ink); }
+  .faq .answer p:last-child { margin-bottom: 0; }
+
+  .contact { background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; padding: 1.25rem 1.25rem 0.5rem; }
+  .contact .mail { font-size: 1.1rem; font-weight: 700; word-break: break-all; }
+  .contact ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+
+  footer { border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.85rem; padding: 1.5rem 0 2.5rem; }
+  footer p { margin: 0 0 0.35rem; }
+  @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto; } }
+  .policy h2 { border-top: 1px solid var(--rule); padding-top: 1.75rem; }
+  .policy h2:first-of-type { border-top: 0; padding-top: 0; }
+  .policy ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  .policy li { margin-bottom: 0.35rem; }
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; min-width: 30rem; font-size: 0.95rem; line-height: 1.7; }
+  th, td { text-align: left; vertical-align: top; padding: 0.6rem 0.75rem 0.6rem 0; border-bottom: 1px solid var(--rule); }
+  th { color: var(--muted); font-weight: 700; }
+  .lead { color: var(--muted); }
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <div class="brand">
+      <svg viewBox="0 0 1024 1024" role="img" aria-label="私の筋トレ記録のアイコン">
+        <rect width="1024" height="1024" fill="#7C9C89"/>
+        <rect x="262" y="176" width="500" height="672" rx="60" style="fill:var(--icon-paper)"/>
+        <rect x="360" y="150" width="34" height="84" rx="17" style="fill:var(--icon-ink)"/>
+        <rect x="495" y="150" width="34" height="84" rx="17" style="fill:var(--icon-ink)"/>
+        <rect x="630" y="150" width="34" height="84" rx="17" style="fill:var(--icon-ink)"/>
+        <rect x="330" y="330" width="330" height="30" rx="15" fill="#B7CCBE"/>
+        <rect x="330" y="450" width="260" height="30" rx="15" fill="#B7CCBE"/>
+        <g transform="translate(512 668) rotate(-14) scale(1.95)" style="fill:var(--icon-ink)">
+          <rect x="-90" y="-38" width="26" height="76" rx="9"/><rect x="64" y="-38" width="26" height="76" rx="9"/>
+          <rect x="-66" y="-25" width="18" height="50" rx="6"/><rect x="48" y="-25" width="18" height="50" rx="6"/>
+          <rect x="-50" y="-8" width="100" height="16" rx="8"/>
+        </g>
+      </svg>
+      <div>
+        <h1>私の筋トレ記録</h1>
+        <p>カレンダーで振り返る、シンプルな筋トレ記録アプリ</p>
+      </div>
+    </div>
+    <nav class="tabs" aria-label="ページ">
+      <a href="./">サポート</a>
+      <a href="privacy.html" aria-current="page">プライバシーポリシー</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap policy">
+    <p class="lead">本アプリは、利用者の記録を運営者のサーバーに送信しません。そのため、運営者が利用者の個人情報を取得することはありません。</p>
+    <p>Sakai Kyohei（以下「運営者」）は、iPhoneアプリ「私の筋トレ記録」（以下「本アプリ」）における利用者の情報の取り扱いについて、以下のとおり定めます。</p>
+
+    <h2>取り扱う情報</h2>
+    <p>本アプリが扱うのは、利用者が自分で入力した次の情報だけです。</p>
+    <ul>
+      <li>トレーニング記録（部位、種目、重量、回数、セットごとのメモ）</li>
+      <li>トレーニングの日付と時間帯（開始時刻・終了時刻）</li>
+      <li>トレーニング場所（利用者が文字で入力した名称）</li>
+      <li>利用者が追加・変更した部位と種目の名称</li>
+      <li>アプリの設定（休憩タイマーの時間、デフォルトの場所、カレンダーの表示方法など）</li>
+    </ul>
+    <p>本アプリは、氏名、メールアドレス、電話番号などの登録を求めません。また、位置情報、連絡先、広告用の識別子、利用状況の統計は取得しません。</p>
+
+    <h2>情報の保存場所</h2>
+    <p>入力された情報は、利用者の端末内に保存されます。</p>
+    <p>利用者がiPhoneでiCloudにサインインしている場合、情報はバックアップと機種変更時の復元のため、AppleのiCloudにも自動で保存されます。保存先は利用者のApple IDに紐づくプライベートな領域で、運営者はその内容を閲覧・取得できません。</p>
+    <p>iCloudでの情報の取り扱いは、<a href="https://www.apple.com/jp/legal/privacy/">Appleのプライバシーポリシー</a>に従います。</p>
+
+    <h2>利用目的</h2>
+    <p>情報は本アプリの機能を提供するためだけに使われ、処理はすべて端末内で行われます。</p>
+    <ul>
+      <li>トレーニング記録の保存と表示（カレンダー、前回メニューの表示など）</li>
+      <li>グラフと集計値（推定RM、総セット数など）の算出</li>
+      <li>休憩タイマーの表示と通知</li>
+      <li>利用者が指示した共有画像・投稿文とCSVファイルの作成</li>
+    </ul>
+
+    <h2>第三者への提供・広告・解析</h2>
+    <p>運営者は利用者の情報を取得しないため、第三者に提供・販売することはありません。</p>
+    <p>本アプリには、広告を表示する仕組みや、外部の解析サービス（アクセス解析、クラッシュ解析など）は組み込まれていません。</p>
+    <p>ただし、利用者がiPhoneの設定で分析データの「Appデベロッパと共有」をオンにしている場合、Appleを通じて本アプリのクラッシュ情報などが運営者に提供されることがあります。この情報に利用者を特定できる内容は含まれず、不具合の修正にのみ使用します。</p>
+
+    <h2>共有・書き出し機能</h2>
+    <p>共有画像・投稿文とCSVファイルは、利用者が操作したときだけ作成され、本アプリが自動で投稿・送信することはありません。</p>
+    <ul>
+      <li>選んだ日のトレーニング記録を、画像と投稿文にして共有できます。共有先（X、LINE、写真など）は、利用者がiPhoneの共有画面で選びます。</li>
+      <li>共有画像には、初期設定ではトレーニング場所とメモを含めません。含めるかどうかは共有前に利用者が選べます。</li>
+      <li>記録をCSVファイルとして書き出し、利用者が選んだ場所（ファイルアプリ、メールなど）に保存・送信できます。</li>
+    </ul>
+    <p>共有・書き出した後の情報は、共有先サービスの利用規約とプライバシーポリシーに従って扱われます。</p>
+
+    <h2>端末の機能へのアクセス</h2>
+    <p>本アプリが使う端末の機能は次の3つです。いずれもiPhoneの設定アプリでいつでもオン・オフを変更できます。</p>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th scope="col">機能</th><th scope="col">使う目的</th><th scope="col">補足</th></tr></thead>
+        <tbody>
+          <tr><td>通知</td><td>休憩タイマーの終了を音と振動で知らせる</td><td>初回利用時に許可を確認します</td></tr>
+          <tr><td>写真への追加</td><td>共有画面で「画像を保存」を選んだとき、共有画像を写真に保存する</td><td>保存時に許可を確認します。写真の読み取りは行いません</td></tr>
+          <tr><td>ライブアクティビティ</td><td>ロック画面などに休憩タイマーの残り時間を表示する</td><td>表示内容は端末内で作成します</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>本アプリは、位置情報、カメラ、マイク、連絡先、ヘルスケアにはアクセスしません。</p>
+
+    <h2>情報の削除</h2>
+    <p>情報は利用者自身の端末とiCloudにしかないため、利用者が次の方法で削除できます。</p>
+    <ul>
+      <li>本アプリ内で種目やセットを削除すると、その記録が消えます。</li>
+      <li>本アプリを削除（アンインストール）すると、端末内の情報はすべて削除されます。</li>
+      <li>iCloudに保存された情報は、iPhoneの「設定」→ 利用者の名前 →「iCloud」→「ストレージを管理」から本アプリを選び、削除できます。項目名はiOSのバージョンによって異なる場合があります。</li>
+    </ul>
+    <p>削除の方法がわからない場合は、下記のお問い合わせ先にご連絡ください。</p>
+
+    <h2>未成年の方の利用</h2>
+    <p>本アプリは年齢を問わず利用できます。未成年の方が共有機能で記録をSNSに投稿する場合は、保護者の方と相談のうえで利用してください。</p>
+
+    <h2>プライバシーポリシーの変更</h2>
+    <p>本ポリシーは、法令の変更や本アプリの機能追加に応じて改定することがあります。重要な変更がある場合は、本アプリのアップデート情報または本ページでお知らせします。改定後のポリシーは、本ページに掲載した時点から効力を生じます。</p>
+
+    <h2>お問い合わせ</h2>
+    <p>本ポリシーに関するお問い合わせは、次の連絡先までお願いします。</p>
+    <ul>
+      <li>運営者：Sakai Kyohei</li>
+      <li>メール：<a href="mailto:mytraininglogging@gmail.com">mytraininglogging@gmail.com</a></li>
+    </ul>
+    <p>制定日：2026年10月1日</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>運営者：Sakai Kyohei</p>
+    <p>© 2026 Sakai Kyohei</p>
+  </div>
+</footer>
+</body>
+</html>
